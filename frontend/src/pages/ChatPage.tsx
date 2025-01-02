@@ -432,6 +432,12 @@ const ChatPage: React.FC = () => {
   }, [bot]);
 
   return (
+    <div className="flex flex-col h-full">
+     <div className="w-full bg-aws-paper p-4 border-b border-gray">
+        <h1 className="text-3xl font-bold text-aws-squid-ink text-center">
+          智能科研辅助平台
+        </h1>
+      </div>
     <div
       className="relative flex h-full flex-1 flex-col"
       onDragOver={onDragOver}
@@ -612,6 +618,7 @@ const ChatPage: React.FC = () => {
         />
       </div>
       <BottomHelper />
+    </div>
     </div>
   );
 };
